@@ -1,0 +1,42 @@
+.Header
+  padding: .5rem 10%
+  color: #FFF
+  background: #1A154D
+  font-size: 2rem
+.FS
+  overflow-y: hidden
+  .Container
+    display: flex
+    flex-flow: row nowrap
+    padding: 10px 0
+
+    .Icon
+      padding-left: 24px
+      padding-right: 6px
+
+    .File, .Folder
+      font-size: 1rem
+      position: relative
+      text-align: center
+      display: flex
+      align-items: center
+      white-space: nowrap
+
+    .File
+
+    .Folder
+
+      &:before
+        width: 15px
+        height: 15px
+        position: absolute
+        left: 3px
+        top: 50%
+        transform: translateY(-50%)
+        content: url("../icons/icon-status-folder.svg")
+
+      &.Open:before
+        content: url("../icons/icon-status-folder-r.svg")
+
+
+
